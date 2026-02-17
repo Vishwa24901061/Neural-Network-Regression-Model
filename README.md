@@ -58,7 +58,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 
 
-dataset = pd.read_csv('"C:\Users\admin\OneDrive\Documents\dl 1.xlsx"')
+dataset = pd.read_csv('//content//Linear_Dataset (1).csv')
 
 X = dataset[['INPUT']].values
 y = dataset[['OUTPUT']].values
@@ -97,9 +97,9 @@ class NeuralNet(nn.Module):
         return x
 
 
-ai_brain = NeuralNet()
+vishwa = NeuralNet()
 criterion = nn.MSELoss()
-optimizer = optim.RMSprop(ai_brain.parameters(), lr=0.001)
+optimizer = optim.RMSprop(vishwa.parameters(), lr=0.001)
 
 
 
@@ -169,19 +169,20 @@ ai_brain = NeuralNet()
 ```
 ## Dataset Information
 
-<img width="349" height="561" alt="image" src="https://github.com/user-attachments/assets/a99d81e0-d825-4412-af87-acf6469a4823" />
+<img width="581" height="429" alt="image" src="https://github.com/user-attachments/assets/ea4473db-299a-459a-afc6-82eded44e387" />
 
 ## OUTPUT
 
-<img width="381" height="236" alt="Screenshot 2026-02-09 110506" src="https://github.com/user-attachments/assets/3dcee2bd-9f01-4a4d-99bd-9698055fbac0" />
+<img width="530" height="238" alt="image" src="https://github.com/user-attachments/assets/a384220c-86c0-423c-994b-bcbd78b0efe2" />
 
 ### Training Loss Vs Iteration Plot
 
-<img width="728" height="561" alt="Screenshot 2026-02-09 110520" src="https://github.com/user-attachments/assets/6e6cbe98-705e-4d47-a40d-03a4cbaa3387" />
+<img width="748" height="579" alt="image" src="https://github.com/user-attachments/assets/78f946b4-fe7f-4827-9806-b3420b492f13" />
 
 ### New Sample Data Prediction
 
-<img width="291" height="17" alt="Screenshot 2026-02-09 110530" src="https://github.com/user-attachments/assets/5a50f44f-d02a-40e2-b869-b653ab54e152" />
+<img width="372" height="35" alt="image" src="https://github.com/user-attachments/assets/89a1ce2e-d047-4351-8dba-f0795ae5eceb" />
+
 
 ## RESULT
 
